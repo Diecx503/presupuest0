@@ -12,3 +12,5 @@ var pMes = document.getElementById('mes');
 
     pYear.textContent = year;
 }())
+
+egresos
