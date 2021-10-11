@@ -14,9 +14,74 @@
     
 </header>
 <body>
-
-    
-    <cript src="Recursos/Js/presupuesto.js"> </cript>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <center>
+                <div class="fechaP">
+                    <p class="ptp">Presupuesto de</p>
+                    <p id="mes" class="mesp"></p>
+                    <p id="year" class="aniop"></p><br />
+                    <p id="motoTotal">+ 500.00</p>
+                </div>
+                <div class="cingresos">
+                    <p class="col-5">INGRESOS:</p>
+                    <p class="col-5 pl-1"> +800.00</p>
+                </div>
+                <div class="cegresos">
+                    <p class="col-5">EGRESOS:</p>
+                    <p class="col-5 pl-1">-300.00</p>
+                </div>
+                <div class="row porGastos">
+                    <p class="tporciento col-10 align-items-start">Porcentaje de gastos:</p>
+                    <p class="porciento col-2">12%</p>
+                </div>
+            </center>    
+        </div>
+    </div>
+    <div class="row container-fluid">
+        <div class="formulariop col-6">
+            <center>
+                <div class="tituloformulario">
+                    <p class="iconomas">+</p>
+                    <p class="h3">Transacción</p>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <select class="form-control" id="selecionInEgre" placeholder="Ingreso | Egreso">
+                            <option>Ingreso</option>
+                            <option>Egreso</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="descripcion" aria-describedby="descripcion" placeholder="Descripción">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="monto" aria-describedby="monto" placeholder="Monto">
+                    </div>
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+            </center>
+        </div>
+        <div class="col-6">
+            <ul class="nav nav-pills  mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+            </div>
+        </div>
+    </div>
+    <script src="Recursos/Js/presupuesto.js"> </script>
     <!-- Recuros para funcionamiento de bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
