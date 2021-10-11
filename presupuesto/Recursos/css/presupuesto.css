@@ -1,3 +1,93 @@
 body{
-  background-color: #FF0000;
+  background-color: #FFFF;
+}
+
+.fechaP {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0.3125rem;
+    padding: 20px;
+    width: 100%;
+}
+.fechaP p{
+    display: inline-block;
+    line-height:1em;
+    font-weight: bold;
+}
+.fechaP .ptp{
+    display: block;
+    margin:0px;
+}
+.cingresos {
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 20em;
+}
+
+.cingresos p {
+    margin-top:1rem;
+    display: inline-block;
+    line-height: 2em;
+    font-weight:bold;
+}
+
+.cegresos {
+    background-color:white;
+    border: solid;
+    border-color: black;
+    text-align: center;
+    width: 20em;
+    margin-top: 1rem;
+}
+.cegresos p{
+    margin-top:1rem;
+    display:inline-block;
+    line-height:2em;
+    font-weight:bold;
+}
+.porGastos{
+    width:19.8em;
+    margin-top:1rem;
+}
+
+.tporciento{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:left;
+   margin:0;
+   padding-left:0;
+   border:0;
+  font-weight:600;
+  font-size:23px;
+}
+.porciento{
+    text-align: center;
+    background-color:black;
+    color:white;
+    font-size:14px;
+    padding-top:0.25rem;
+    padding-bottom:0.25rem;
+}
+.formulariop {
+    border-right: 0.3px solid;
+    border-color: #F8F5F4;
+}
+.iconomas {
+    background-color: #EBEFF4;
+    color: #A7A9AA;
+    width:2.1em;
+    height:2.1em;
+    margin-left:1rem;
+    text-align:center;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    padding-top:0.2rem;
+}
+.tituloformulario p{
+    display:inline-block;
+    margin-left:1rem;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: black;
 }
