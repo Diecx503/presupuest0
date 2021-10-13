@@ -1,18 +1,20 @@
-//función para fecha del presupuesto
-(function () {
+//Función para fecha del presupuesto
+function mFecha(Fecha) {
     var fecha = new Date();
     var mes = fecha.getMonth();
     var year = fecha.getFullYear();
 
-var pMes = document.getElementById('mes');
+    var pMes = document.getElementById('mes'),//para acceder la ubicación del id
         pYear = document.getElementById('year');
 
     var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-    pMes.textContent = meses[mes];
+    pMes.textContent = meses[mes]; //agregando el mes al parrafo
 
-    pYear.textContent = year;
-}())
+    pYear.textContent = year; //agregando el año al parrafo
+}
+mFecha();
 
+//Mostrar total, total ingreso y total egreso
 
 
 //Mostrar el ingreso total en pantalla
