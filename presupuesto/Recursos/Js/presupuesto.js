@@ -14,7 +14,7 @@ var pMes = document.getElementById('mes');
 }())
 
 
-//funcion para boton agregar
+
 //Mostrar el ingreso total en pantalla
 var ingreso_total = document.getElementById('ingresototal');
 var contador_ingreso = 0;
@@ -31,7 +31,7 @@ function opcion(selected){
     return selected;
 }
 
-var tabingreso = document.getElementById('contenedor_ingreso');
+var tabingreso = document.getElementById('contenedor_ingreso'); //pendiente tabla
 var tabegreso = document.getElementById('contenedor_egreso');
 var vingreso = [];
 var vegreso = [];
@@ -46,7 +46,7 @@ function botonagregar() {
     
    if( opcion() == "Ingreso"){/Si la opcion seleccionada es ingreso/
         tabingreso.innerHTML="";/Limpia el tab para que no se dupliquen cada vez que se oprime el boton/
-        let descrip = document.getElementById('descripcion').value; /Se obrtiene el texto de descripción/
+        let descripcion = document.getElementById('descripcion').value; /Se obrtiene el texto de descripción/
         let monto = document.getElementById('monto').value; /Se obtiene el monto/
         let suma = (parseFloat(contador_ingreso) + parseFloat(monto)); /Suma el contador de ingreso con el monto agregado/
         contador_ingreso = suma; /El valor de suma es el nuevo valor del contador ingreso/
@@ -106,24 +106,4 @@ function botonagregar() {
 
 
 
-function validacion() {
-  if (document.getElementById('descripcion').value == "") {
-    // Si no se cumple la condicion...
-    alert('[ERROR] El campo descripción debe tener texto');
-    return false;
-  }
-  else if (document.getElementById('monto').value == "") {
-    // Si no se cumple la condicion...
-    alert('[ERROR] El campo monto debe tener un valor ');
-    return false;
-  }
-  
-  /Si pasa todo se ejecuta la función botonagregar()/
-  botonagregar();
-}
-
-function limpiar(){
-    document.getElementById('descripcion').value= "";
-    document.getElementById('monto').value= "";
-}
 
