@@ -46,7 +46,7 @@ var vegreso = [];
 
 function botonagregar() {
     
-   if( opcion() == "Ingreso"){/Si la opcion seleccionada es ingreso/
+   if( opcion() == "ingreso"){/Si la opcion seleccionada es ingreso/
         tabingreso.innerHTML="";/Limpia el tab para que no se dupliquen cada vez que se oprime el boton/
         let descripcion = document.getElementById('descripcion').value; /Se obtiene el texto de descripción/
         let monto = document.getElementById('monto').value; /Se obtiene el monto/
@@ -55,8 +55,8 @@ function botonagregar() {
         ingreso_total.innerHTML = "<p>Ingresos:   + " + "$" + contador_ingreso + "</p>"; /Se escribe en la pagina el contador/
        
        
-       /Creacion de cadana HTML a utilizar y guardandola en Array/
-       let contenidohtml = "<li class='list-group-item'><pre>" + descrip +"        " + "$"+ monto +  "</pre></li>";
+     Creacion de cadana HTML a utilizar y guardandola en Array/
+       let contenidohtml = "<li class='list-group-item'><pre>" + descripcion +"        " + "$"+ monto +  "</pre></li>";
        vingreso.push(contenidohtml);
        console.log(vingreso);
        
@@ -109,12 +109,12 @@ function botonagregar() {
 //funcion para validar y limpiar descripcion y monto
 function validacion() {
   if (document.getElementById('descripcion').value == "") {
-    // Si no se cumple la condicion...
+    // Si no se cumple la condicion
     alert('[ERROR] El campo descripción debe tener texto');
     return false;
   }
   else if (document.getElementById('monto').value == "") {
-    // Si no se cumple la condicion...
+    // Si no se cumple la condicion
     alert('[ERROR] El campo monto debe tener un valor ');
     return false;
   }
