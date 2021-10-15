@@ -46,7 +46,7 @@ function botonagregar() {
     
    if( opcion() == "Ingreso"){/Si la opcion seleccionada es ingreso/
         tabingreso.innerHTML="";/Limpia el tab para que no se dupliquen cada vez que se oprime el boton/
-        let descripcion = document.getElementById('descripcion').value; /Se obrtiene el texto de descripción/
+        let descripcion = document.getElementById('descripcion').value; /Se obtiene el texto de descripción/
         let monto = document.getElementById('monto').value; /Se obtiene el monto/
         let suma = (parseFloat(contador_ingreso) + parseFloat(monto)); /Suma el contador de ingreso con el monto agregado/
         contador_ingreso = suma; /El valor de suma es el nuevo valor del contador ingreso/
