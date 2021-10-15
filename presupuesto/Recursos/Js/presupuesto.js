@@ -106,6 +106,26 @@ function botonagregar() {
     prom.innerHTML = "<p>" + porcentaje_gastos + " %</p>"
 }
 
+//funcion para validar y limpiar descripcion y monto
+function validacion() {
+  if (document.getElementById('descripcion').value == "") {
+    // Si no se cumple la condicion...
+    alert('[ERROR] El campo descripción debe tener texto');
+    return false;
+  }
+  else if (document.getElementById('monto').value == "") {
+    // Si no se cumple la condicion...
+    alert('[ERROR] El campo monto debe tener un valor ');
+    return false;
+  }
+  
+  /Si pasa todo se ejecuta la función botonagregar()/
+  botonagregar();
+}
 
+function limpiar(){
+    document.getElementById('descripcion').value= "";
+    document.getElementById('monto').value= "";
+}
 
 
