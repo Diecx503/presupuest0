@@ -1,7 +1,7 @@
 body{
   background-color: #FFFF;
 }
-
+/* css de jumbotron */
 .fechaP {
     text-align: center;
     font-size: 2.5em;
@@ -24,14 +24,12 @@ body{
     text-align: center;
     width: 20em;
 }
-
 .cingresos p {
     margin-top:1rem;
     display: inline-block;
     line-height: 2em;
     font-weight:bold;
 }
-
 .cegresos {
     background-color:white;
     border: solid;
@@ -50,7 +48,6 @@ body{
     width:19.8em;
     margin-top:1rem;
 }
-
 .tporciento{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align:left;
@@ -68,6 +65,8 @@ body{
     padding-top:0.25rem;
     padding-bottom:0.25rem;
 }
+
+/* css del formulario */
 .formulariop {
     border-right: 0.3px solid;
     border-color: #F8F5F4;
@@ -88,6 +87,11 @@ body{
     display:inline-block;
     margin-left:1rem;
 }
+.formularioT{
+    width: 50%;
+}
+
+/* css pills y tabla  */
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     background-color: black;
 }

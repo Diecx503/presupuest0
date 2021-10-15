@@ -7,12 +7,6 @@
     <link rel="Stylesheet" type="text/css" href="Recursos/css/presupuesto.css">
     <title>Presupuesto</title>
 </head>
-<header>
-    <title>  
-        
-    </title>
-    
-</header>
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -25,7 +19,7 @@
                 </div>
                 <div class="cingresos">
                     <p class="col-5" id="ingresototal">INGRESOS:</p>
-                    <p class="col-5 pl-1"> </p>
+                    <p class="col-5 pl-1"> +800.00</p>
                 </div>
                 <div class="cegresos">
                     <p class="col-5" id="egresototal">EGRESOS:</p>
@@ -39,13 +33,13 @@
         </div>
     </div>
     <div class="row container-fluid">
-        <div class="formulariop col-6">
+        <div class="formulariop col-md-6 col-sm-12 pb-4">
             <center>
                 <div class="tituloformulario">
                     <p class="iconomas">+</p>
                     <p class="h3">Transacción</p>
                 </div>
-                <form>
+                <form class="formularioT">
                     <div class="form-group">
                         <select class="form-control" id="selecionInEgre" placeholder="Ingreso | Egreso">
                             <option id="tabingreso"> Ingreso </option>
@@ -62,22 +56,81 @@
                 </form>
             </center>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
+<!--            <div class="tab">
+                <button class="tablinks" onclick="Ingreso (event, 'Ingreso')">Ingreso</button>
+                <button class="tablinks" onclick="Egreso (event, 'Egreso')">Egreso</button>
+            </div>
+            <div id="Ingreso" class="tab-content">
+                <table class="table table-sm tableIngreso">
+                        <tbody>
+                            <tr>
+                                <th>Salario 1</th>
+                                <th>+400.00</th>
+                            </tr>
+                            <tr>
+                                <th>Salario 2</th>
+                                <th>+400.00</th>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <div id="Egreso" class="tab-content">
+                <table class="table table-sm tableIngreso">
+                        <tbody>
+                            <tr>
+                                <th>Supermercado</th>
+                                <th>-200.00</th>
+                                <td class="text-white bg-dark">12%</td>
+                            </tr>
+                            <tr>
+                                <th>Servicios básicos</th>
+                                <th>-100.00</th>
+                                <td class="text-white bg-dark">12%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+-->
             <ul class="nav nav-pills  mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Ingresos</a>
-
                 </li>
-                
-    
                 <li class="nav-item">
                     <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Egresos</a>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <table class="table table-sm tableIngreso">
+                        <tbody>
+                            <tr>
+                                <th>Salario 1</th>
+                                <th>+400.00</th>
+                            </tr>
+                            <tr>
+                                <th>Salario 2</th>
+                                <th>+400.00</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <table class="table table-sm tableIngreso">
+                        <tbody>
+                            <tr>
+                                <th>Supermercado</th>
+                                <th>-200.00</th>
+                                <td class="text-white bg-dark">12%</td>
+                            </tr>
+                            <tr>
+                                <th>Servicios básicos</th>
+                                <th>-100.00</th>
+                                <td class="text-white bg-dark">12%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
