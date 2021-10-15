@@ -17,17 +17,23 @@ mFecha();
 //Mostrar total, total ingreso y total egreso
 
 
-//Mostrar el ingreso total en pantalla
+
+
+/*
+Mostrar el ingreso total en pantalla
 var ingreso_total = document.getElementById('ingresototal');
 var contador_ingreso = 0;
-ingreso_total.innerHTML = "<p>Ingresos:           " + contador_ingreso + "          </p>"
+cingreso.innerHTML = "<p>Ingresos:           " + contador_ingreso + "          </p>"
 
 //Mostrar el egreso total en pantalla
 var egreso_total = document.getElementById('egresototal');
 var contador_egreso = 0;
-egreso_total.innerHTML = "<p>Egresos:           " + contador_egreso + "          </p>"
+cegreso.innerHTML = "<p>Egresos:           " + contador_egreso + "          </p>"
+*/
 
-function opcion(selected){
+
+
+/*function opcion(selected){
     var form = document.getElementById("formgroup");
     var selected = form.options[form.selectedIndex].text;  
     return selected;
@@ -44,7 +50,8 @@ var vegreso = [];
 
 
 
-function botonagregar() {
+
+/*function botonagregar() {
     
    if( opcion() == "ingreso"){/Si la opcion seleccionada es ingreso/
         tabingreso.innerHTML="";/Limpia el tab para que no se dupliquen cada vez que se oprime el boton/
@@ -65,14 +72,14 @@ function botonagregar() {
            tabingreso.innerHTML = vingreso.join("");
        };
   
-       }
+       }*/
 
 
 
 
 
     
-    if( opcion()== "Egreso"){/Si la opcion seleccionada es egreso/
+   /* if( opcion()== "Egreso"){/Si la opcion seleccionada es egreso/
         tabegreso.innerHTML="";
        let descrip = document.getElementById('descripcion').value; /Se obrtiene el texto de descripción/
         let monto = document.getElementById('monto').value; /Se obtiene el monto/
@@ -105,7 +112,7 @@ function botonagregar() {
     var prom = document.getElementById('porcentaje');
     prom.innerHTML = "<p>" + porcentaje_gastos + " %</p>"
 }
-
+*/
 //funcion para validar y limpiar descripcion y monto
 function validacion() {
   if (document.getElementById('descripcion').value == "") {
