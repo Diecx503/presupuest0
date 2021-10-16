@@ -4,7 +4,7 @@ function mFecha(Fecha) {
     var mes = fecha.getMonth();
     var year = fecha.getFullYear();
 
-    var pMes = document.getElementById('mes'),//para acceder la ubicación del id
+    var pMes = document.getElementById('mes'), //para acceder la ubicación del id
         pYear = document.getElementById('year');
 
     var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
@@ -32,3 +32,10 @@ pTotal.innerHTML = "$" + totalMonto.toFixed(2)
 var porcentajetotal = document.getElementById('porcentajetotal');
 var portotal = 0;
 porcentajetotal.innerHTML = portotal + "%"
+
+
+function opcion(selected) {
+    var selecionInEgre = document.getElementById('selecionInEgre');
+    var selected=form.option[selecionInEgre.opcion]
+
+}
