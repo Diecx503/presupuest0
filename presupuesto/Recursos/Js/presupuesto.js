@@ -14,10 +14,21 @@ function mFecha(Fecha) {
 }
 mFecha();
 
-
-
 //Mostrar total, total ingreso y total egreso
 var pIngreso = document.getElementById('ingresototal');
 var tIngreso = 0;
-pIngreso.textContent = tIngreso;
+pIngreso.innerHTML = "+" + tIngreso.toFixed(2)
 
+var pEgreso = document.getElementById('egresototal');
+var tEgreso = 0;
+pEgreso.innerHTML = "-" + tIngreso.toFixed(2)
+
+//Mostrar Total
+var pTotal = document.getElementById('montoTotal');
+var totalMonto = 0;
+pTotal.innerHTML = "$" + totalMonto.toFixed(2)
+
+//Mostrar porcentaje%
+var porcentajetotal = document.getElementById('porcentajetotal');
+var portotal = 0;
+porcentajetotal.innerHTML = portotal + "%"
