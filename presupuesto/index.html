@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="Stylesheet" type="text/css" href="Recursos/css/presupuesto.css">
     <title>Presupuesto</title>
 </head>
+
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -29,7 +31,7 @@
                     <p class="tporciento col-10 align-items-start">Porcentaje de gastos:</p>
                     <p class="porciento col-2" id="porcentajetotal"></p>
                 </div>
-            </center>    
+            </center>
         </div>
     </div>
     <div class="row container-fluid">
@@ -41,24 +43,31 @@
                 </div>
                 <form class="formularioT">
                     <div class="form-group">
-                        <select class="form-control" id="selecionInEgre" placeholder="Ingreso | Egreso">
+                        <select class="form-control" id="selecionInEgre" onchange="option()" placeholder="Ingreso | Egreso">
                             <option> Ingreso </option>
                             <option>Egreso</option>
                         </select>
                     </div>
                     <div class="form-group">
+<<<<<<< HEAD
                         <input type="text"  class="form-control" id="descripcion" aria-describedby="descripcion" placeholder="Descripción" required>
                         <span id="errordescripcion"></span>
                     </div>
                     <div class="form-group">
                         <input type="number"  class="form-control" id="monto" aria-describedby="monto" placeholder="Monto" required>
                         <span id="errormonto"></span>
+=======
+                        <input type="text" class="form-control" id="descripcion" aria-describedby="descripcion" placeholder="Descripción">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="monto" aria-describedby="monto" placeholder="Monto">
+>>>>>>> 2c47b9876d91d47103f2eaded4004d3ebf7736a4
                     </div>
                     <button type="submit" id="botonagregar" onclick="botonagregar()" class="btn btn-dark">Agregar</button>
                 </form>
             </center>
         </div>
-        
+
         <!-- AQUI COMIENZA TABLA PARA MOSTRAR LA INFORMACION -->
         <div class="col-md-6 col-sm-12">
             <ul class="nav nav-pills  mb-3" id="pills-tab" role="tablist">
@@ -109,4 +118,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>
