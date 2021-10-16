@@ -15,9 +15,9 @@ function mFecha(Fecha) {
 mFecha();
 
 //Mostrar total, total ingreso y total egreso
-
-
-
+var pIngreso = document.getElementById('ingresototal');
+var tIngreso = 0;
+pIngreso.textContent = tIngreso;
 
 /*
 Mostrar el ingreso total en pantalla
