@@ -47,10 +47,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <input type="text"  class="form-control" id="descripcion" aria-describedby="descripcion" placeholder="Descripción">
+                        <input type="text"  class="form-control" id="descripcion" aria-describedby="descripcion" placeholder="Descripción" required>
+                        <span id="errordescripcion"></span>
                     </div>
                     <div class="form-group">
-                        <input type="text"  class="form-control" id="monto" aria-describedby="monto" placeholder="Monto">
+                        <input type="number"  class="form-control" id="monto" aria-describedby="monto" placeholder="Monto" required>
+                        <span id="errormonto"></span>
                     </div>
                     <button type="submit" id="botonagregar" onclick="botonagregar()" class="btn btn-dark">Agregar</button>
                 </form>
