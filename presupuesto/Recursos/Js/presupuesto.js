@@ -14,17 +14,8 @@ function mFecha(Fecha) {
 }
 mFecha();
 
-<<<<<<< HEAD
-// motrar ingreso en pantalla
-var pIngreso= document.getElementById('ingresototal');
-var contador_Ingreso=0;
-pIngreso.innerHTML= "+"+ contador_Ingreso + 
 
-// motrar ingreso en pantalla
-var pEgreso= document.getElementById('egresototal');
-var contador_Egreso=0;
-pEgreso.innerHTML= "+"+ contador_Egreso + 
-=======
+
 //Mostrar total, total ingreso y total egreso
 var pIngreso = document.getElementById('ingresototal');
 var tIngreso = 0;
