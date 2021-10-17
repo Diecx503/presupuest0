@@ -58,7 +58,7 @@
                         <span id="errormonto"></span>
                     </div>
                 </form>
-                <button type="submit" id="botonagregar" onclick="botonagregar()" class="btn btn-dark">Agregar</button>
+                <button type="submit" id="botonagregar" onclick="validacion();limpiar()" class="btn btn-dark">Agregar</button>
             </center>
         </div>
 
@@ -79,9 +79,7 @@
                     </table>
                 </div>
                 <div class="tab-pane fade" id="pills-egreso" role="tabpanel" aria-labelledby="pills-egreso-tab">
-                    <table class="table table-sm tableEngreso">
-                        <tbody id="contenedor_Egreso">
-                        </tbody>
+                    <table class="table table-sm tableEngreso" id="contenedor_Egreso">
                     </table>
                 </div>
             </div>
