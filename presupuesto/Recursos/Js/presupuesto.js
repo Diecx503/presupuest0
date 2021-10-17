@@ -47,12 +47,20 @@ var vEgreso=[];
 
 //Funcion para boton agregar
 function botonagregar(){
-if ( opcion()=="Ingreso"){} 
+if (opcion()=="Ingreso"){
+    contenedor_Ingreso.innerHTML="";
     let descripcion=document.getElementById('descripcion').value;
     let monto=document.getElementById('monto').value;
-    var suma=(parseFloat(tIngreso) +  parseFloat(monto));
+    let suma=(parseFloat(tIngreso) +  parseFloat(monto));
     tIngreso= suma;
     pIngreso.innerHTML= "+"  +  tIngreso.toFixed(2)
-    
-    
+    //Creacion de cadena par crear Array
+    let tabla="<tr><th>" +  descripcion + "</th> <th>"  + monto  + "</th> </tr>";      
+    vIngreso.push(tabla);
+
+    //Bucle para escribir datos en el array
+    for(let i=0; i < tabla.length; i++){
+    contenedor_Ingreso.innerHTML = tabla.join("");
+    };
+}
 }
