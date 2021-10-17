@@ -47,20 +47,23 @@ var vEgreso=[];
 
 //Funcion para boton agregar
 function botonagregar(){
-if (opcion()=="Ingreso"){
-    contenedor_Ingreso.innerHTML="";
+    if (opcion() == "Ingreso") {
+        contenedor_Ingreso.innerHTML = "";
     let descripcion=document.getElementById('descripcion').value;
     let monto=document.getElementById('monto').value;
     let suma=(parseFloat(tIngreso) +  parseFloat(monto));
     tIngreso= suma;
     pIngreso.innerHTML= "+"  +  tIngreso.toFixed(2)
     //Creacion de cadena par crear Array
-    let tabla="<tr><th>" +  descripcion + "</th> <th>"  + monto  + "</th> </tr>";      
-    vIngreso.push(tabla);
+    let tabla="<tr> <th>" +  descripcion + "</th> <th>"  + monto  + "</th> </tr>";      
+        vIngreso.push(tabla);
+        console.log(vIngreso);
 
-    //Bucle para escribir datos en el array
-    for(let i=0; i < tabla.length; i++){
-    contenedor_Ingreso.innerHTML = tabla.join("");
+        //Bucle para escribir datos en el array
+        for (let i = 0; i < vIngreso.length; i++) {
+            contenedor_Ingreso.innerHTML = vIngreso.join("");
     };
 }
 }
+
+if(opcion)
