@@ -36,8 +36,8 @@ porcentajetotal.innerHTML = portotal + "%"
 
 function opcion(selected) {
     var selecionInEgre = document.getElementById('selecionInEgre');
-    var selected=form.option[selecionInEgre.opcion]
-
+    var selected = selecionInEgre.options[selecionInEgre.selectedIndex].text;
+    return selected;
 }
 
 var contenedor_Ingreso=document.getElementById('contenedor_Ingreso');
