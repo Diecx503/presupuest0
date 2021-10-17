@@ -39,3 +39,20 @@ function opcion(selected) {
     var selected=form.option[selecionInEgre.opcion]
 
 }
+
+var contenedor_Ingreso=document.getElementById('contenedor_Ingreso');
+var contenedor_Egreso=document.getElementById('contenedor_Egreso');
+var vIngreso=[];
+var vEgreso=[];
+
+//Funcion para boton agregar
+function botonagregar(){
+if ( opcion()=="Ingreso"){} 
+    let descripcion=document.getElementById('descripcion').value;
+    let monto=document.getElementById('monto').value;
+    var suma=(parseFloat(tIngreso) +  parseFloat(monto));
+    tIngreso= suma;
+    pIngreso.innerHTML= "+"  +  tIngreso.toFixed(2)
+    
+    
+}
